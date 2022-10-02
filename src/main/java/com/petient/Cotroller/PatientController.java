@@ -53,10 +53,15 @@ public class PatientController {
 	// delete
 	@DeleteMapping("/{id}")
 	public void deletePateint(@PathVariable int id) {
-
+ try {
 		this.repo.deleteById(id);
 
 		System.out.println("data is deleted succsessfully" + id);
+	 
+ }catch(Exception e) {
+	 e.getMessage();
+ }
+	
 
 	}
 
