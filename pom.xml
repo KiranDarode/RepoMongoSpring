@@ -8,6 +8,8 @@
 		<version>2.7.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	
+	
 	<groupId>com.example</groupId>
 	<artifactId>DemoSpringBoot1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -79,6 +81,18 @@
                 <target>1.8</target>
 </configuration>
 </plugin>
+<plugin>  
+ <groupId>org.apache.tomcat.maven</groupId>  
+ <artifactId>tomcat7-maven-plugin</artifactId>  
+ <version>2.2</version>  
+ <configuration>  
+  <url>http:// localhost:8080/petient/</url>  
+  <server>TomcatServer</server>    
+  <username>**</username>  
+  <password>**</password>   
+ </configuration>   
+</plugin>  
+
 		</plugins>
 	</build>
 
